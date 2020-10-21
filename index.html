@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/script.js" type="module"></script>
+    <title>Anuncios Automotores</title>
+  </head>
+  <body>
+    <header>
+      <img src="./image/logo.svg" alt="logo de la pagina" id="img-logo" />
+      <nav>
+        <a href="">Nosotros</a>
+        <a href="">Avisos</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+    <div>
+      <h1>Administracion</h1>
+      <img src="./image/portada.jpg" alt="portada" id="img-portada" />
+    </div>
+    <section class="container">
+      <fieldset>
+        <legend>Informacion Del Anuncio</legend>
+        <form>
+          <label id="lblId" class="ocultar">
+            Id:
+            <input type="text" id="txtId" name="id" class="ocultar" disabled />
+          </label>
+          <br /><br />
+          <label>
+            Titulo:
+            <input type="text" id="txtTitulo" name="titulo" />
+          </label>
+          <br /><br />
+          <label>Transaccion: </label>
+          <br /><br />
+          <label for="rdoV"
+            ><input
+              type="radio"
+              name="transaccion"
+              id="rdoV"
+              value="Venta"
+              checked
+            />Venta</label
+          >
+          <br /><br />
+          <label for="rdoA"
+            ><input
+              type="radio"
+              name="transaccion"
+              id="rdoA"
+              value="Alquiler"
+            />Alquiler</label
+          >
+          <br /><br />
+          <label>
+            Descripcion:
+            <input type="text" id="txtDescrip" name="descripcion" required />
+          </label>
+          <br /><br />
+          <label>
+            Precio:
+            <input type="text" id="txtPrecio" name="precio" required />
+          </label>
+          <br /><br />
+
+          <input type="text" id="txtPuertas" name="puertas" required />
+          <input type="text" id="txtKms" name="kms" required />
+          <input type="text" id="txtPotencia" name="potencia" required />
+
+          <br /><br />
+          <button id="btnAlta">Guardar</button>
+          <button id="btnBaja" class="ocultar">Eliminar</button>
+          <button id="btnMod" class="ocultar">Modificar</button>
+          <button id="btnCancel">Cancelar</button>
+        </form>
+      </fieldset>
+    </section>
+    <br /><br />
+    <br /><br />
+    <div class="container">
+      <div id="divTabla" class="tabla"></div>
+    </div>
+    <footer> 
+      <nav>
+        <a href="">Nosotros</a>
+        <a href="">Avisos</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+      <p>Todos los derechos reservados &copy</p>
+    </footer>
+  </body>
+</html>

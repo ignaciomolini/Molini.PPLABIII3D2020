@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+thead{
+    background-color: tomato;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin-left: 80%;
+}
+
+.ocultar {
+  display: none;
+}
+
+tr:hover,
+button:hover {
+  background-color: rgb(184, 72, 72);
+  transition: background-color 1s;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+}
+
+header, footer {    
+    width: 100%;
+    background-color: rgb(80, 114, 207);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#img-logo{
+    width: 200px; height: 200px;
+}
+
+#img-portada{
+    width: 100%; height: 200px;
+}
