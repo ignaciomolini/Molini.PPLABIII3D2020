@@ -30,10 +30,13 @@ p{
   display: none;
 }
 
-tr:hover,
-button:hover {
+tr:hover{
   background-color: rgb(184, 72, 72);
   transition: background-color 1s;
+}
+
+button{
+    background-color: greenyellow;
 }
 
 h1{
